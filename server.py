@@ -1,3 +1,5 @@
+from nutritionix import Nutritionix
+nix = Nutritionix(app_id="7cb9887a", api_key="a4d7fd53cc8bfde145020068f99b204d")
 from twisted.internet.protocol import Protocol, Factory
 from twisted.internet import reactor
 
@@ -22,17 +24,20 @@ class IphoneChat(Protocol):
             if command == "iam":
                 self.name = content
                 msg = self.name + " has joined"
-                
+            
             elif command == "msg":
                 msg = self.name + ": " + content
             
+            elif command == "nix":
+                msg = nix.search(content)
+        
             print msg
-                        
+            
             for c in self.factory.clients:
                 c.message(msg)
-                
-    def message(self, message):
-        self.transport.write(message + '\n')
+
+def message(self, message):
+    self.transport.write(message + '\n')
 
 
 factory = Factory()
