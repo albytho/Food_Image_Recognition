@@ -1,7 +1,7 @@
 from twisted.internet.protocol import Protocol, Factory
 from twisted.internet import reactor
 from nutritionix import Nutritionix
-nix = Nutritionix(app_id="", api_key="")
+nix = Nutritionix(app_id="43833828", api_key="ca216d8b1580d9e6dc9bf7853dce8a81")
 import json
 
 
@@ -20,14 +20,16 @@ class IphoneChat(Protocol):
         if len(a) > 1:
             command = a[0]
             content = a[1].rstrip()
+            flag = 0
             
             msg = ""
             if command == "iam":
                 self.name = content
                 msg = self.name + " has joined"
             
-            #elif command == "msg":
-            #    msg = self.name + ": " + content
+            elif command == "msg":
+                msg = self.name + ": " + content
+                print msg
             
             elif command == "nix":
                 res = []
@@ -43,15 +45,22 @@ class IphoneChat(Protocol):
                                     or key2 == "nf_total_fat" or key2 == "nf_total_carbohydrate" \
                                     or key2 == "nf_protein" or key2 == "nf_calories" \
                                     or key2 == "nf_vitamin_a_dv" or key2 == "nf_sodium"):
+                                    if (key2 == "nf_calories" and flag == 0):
+                                        msg = "val:" + str(value2)
+                                        print value2
+                                        flag = 1
                                     #print key2, ", ", value2
-                                    index.append((key2, value2))
-                            if len(index) > 0:
-                                res.append(index)
+                                    #index.append((key2, value2))
+                            #if len(index) > 0:
+                                #res.append(index)
                     #print '\n'
-                print res
+                #print res
 
-            #for c in self.factory.clients
-                #c.message(msg)
+            for c in self.factory.clients:
+                message(c, msg)
+            
+
+            
 
 
 def message(self, message):
@@ -62,6 +71,6 @@ factory = Factory()
 factory.protocol = IphoneChat
 factory.clients = []
 
-reactor.listenTCP(80, factory)
+reactor.listenTCP(81, factory)
 print "Iphone Chat server started"
 reactor.run()

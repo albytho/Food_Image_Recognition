@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		318B643F49DCC9BB91E622E5 /* Pods_DailyNutritionTrails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F19552B842DBD2FC43204C /* Pods_DailyNutritionTrails.framework */; };
+		04AAF7E8C9356F30CDC27715 /* Pods_DailyNutritionTrails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835FE3B1F14BFF99A108EEDA /* Pods_DailyNutritionTrails.framework */; };
+		4FEB76331E630FBA0053F6CC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB76251E630FBA0053F6CC /* Result.swift */; };
+		4FEB76341E630FBA0053F6CC /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB76261E630FBA0053F6CC /* Socket.swift */; };
+		4FEB76351E630FBA0053F6CC /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB76271E630FBA0053F6CC /* TCPClient.swift */; };
+		4FEB76361E630FBA0053F6CC /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB76281E630FBA0053F6CC /* UDPClient.swift */; };
+		4FEB76371E630FBA0053F6CC /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB76291E630FBA0053F6CC /* ytcpsocket.c */; };
+		4FEB76381E630FBA0053F6CC /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB762A1E630FBA0053F6CC /* yudpsocket.c */; };
+		4FEB76391E630FBA0053F6CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB762B1E630FBA0053F6CC /* Info.plist */; };
+		4FEB763A1E630FBA0053F6CC /* SwiftSocket.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4FEB762D1E630FBA0053F6CC /* SwiftSocket.xcconfig */; };
+		4FEB763B1E630FBA0053F6CC /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB762E1E630FBA0053F6CC /* SwiftSocket-dummy.m */; };
 		66978E171E627CF8002D7E85 /* CognitiveServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66978E151E627CF8002D7E85 /* CognitiveServices.swift */; };
 		66978E181E627CF8002D7E85 /* JSONNSDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66978E161E627CF8002D7E85 /* JSONNSDataExtension.swift */; };
 		66978E1A1E627D0A002D7E85 /* AnalyzeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66978E191E627D0A002D7E85 /* AnalyzeImage.swift */; };
 		69FE971E1E62AC97001DFBFF /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE971D1E62AC97001DFBFF /* mainViewController.swift */; };
-		69FE973F1E631FE6001DFBFF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE97311E631FE6001DFBFF /* Result.swift */; };
-		69FE97401E631FE6001DFBFF /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE97321E631FE6001DFBFF /* Socket.swift */; };
-		69FE97411E631FE6001DFBFF /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE97331E631FE6001DFBFF /* TCPClient.swift */; };
-		69FE97421E631FE6001DFBFF /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE97341E631FE6001DFBFF /* UDPClient.swift */; };
-		69FE97431E631FE6001DFBFF /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 69FE97351E631FE6001DFBFF /* ytcpsocket.c */; };
-		69FE97441E631FE6001DFBFF /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 69FE97361E631FE6001DFBFF /* yudpsocket.c */; };
-		69FE97451E631FE6001DFBFF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69FE97371E631FE6001DFBFF /* Info.plist */; };
-		69FE97461E631FE6001DFBFF /* SwiftSocket.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 69FE97391E631FE6001DFBFF /* SwiftSocket.xcconfig */; };
-		69FE97471E631FE6001DFBFF /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FE973A1E631FE6001DFBFF /* SwiftSocket-dummy.m */; };
 		9C35A4B41DE4EF8000650581 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B31DE4EF8000650581 /* SafariServices.framework */; };
 		9C35A4B61DE4EF8500650581 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C35A4B51DE4EF8500650581 /* Security.framework */; };
 		9CA121761DAC7FFD000C2FCA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA121751DAC7FFD000C2FCA /* WebKit.framework */; };
@@ -35,22 +35,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FEB76251E630FBA0053F6CC /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		4FEB76261E630FBA0053F6CC /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+		4FEB76271E630FBA0053F6CC /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
+		4FEB76281E630FBA0053F6CC /* UDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
+		4FEB76291E630FBA0053F6CC /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
+		4FEB762A1E630FBA0053F6CC /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
+		4FEB762B1E630FBA0053F6CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEB762C1E630FBA0053F6CC /* SwiftSocket.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
+		4FEB762D1E630FBA0053F6CC /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		4FEB762E1E630FBA0053F6CC /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		4FEB762F1E630FBA0053F6CC /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		4FEB76301E630FBA0053F6CC /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
 		66978E151E627CF8002D7E85 /* CognitiveServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitiveServices.swift; sourceTree = "<group>"; };
 		66978E161E627CF8002D7E85 /* JSONNSDataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONNSDataExtension.swift; sourceTree = "<group>"; };
 		66978E191E627D0A002D7E85 /* AnalyzeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeImage.swift; sourceTree = "<group>"; };
 		69FE971D1E62AC97001DFBFF /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
-		69FE97311E631FE6001DFBFF /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
-		69FE97321E631FE6001DFBFF /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
-		69FE97331E631FE6001DFBFF /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
-		69FE97341E631FE6001DFBFF /* UDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
-		69FE97351E631FE6001DFBFF /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
-		69FE97361E631FE6001DFBFF /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
-		69FE97371E631FE6001DFBFF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69FE97381E631FE6001DFBFF /* SwiftSocket.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
-		69FE97391E631FE6001DFBFF /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
-		69FE973A1E631FE6001DFBFF /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
-		69FE973B1E631FE6001DFBFF /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
-		69FE973C1E631FE6001DFBFF /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
+		835FE3B1F14BFF99A108EEDA /* Pods_DailyNutritionTrails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyNutritionTrails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C35A4B31DE4EF8000650581 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9C35A4B51DE4EF8500650581 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9CA121751DAC7FFD000C2FCA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -65,9 +66,8 @@
 		A2E767C5194594DC00869113 /* ToDoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemViewController.swift; sourceTree = "<group>"; };
 		A31A89F61BF3FDFA00C7B656 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A3BBD77C1C05181600DD0DB0 /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftAzureMobile.framework; sourceTree = "<group>"; };
-		B77F1701068DB4F5C2B1912C /* Pods-DailyNutritionTrails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNutritionTrails.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyNutritionTrails/Pods-DailyNutritionTrails.debug.xcconfig"; sourceTree = "<group>"; };
-		D20ED97F0630E198F371DAC5 /* Pods-DailyNutritionTrails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNutritionTrails.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyNutritionTrails/Pods-DailyNutritionTrails.release.xcconfig"; sourceTree = "<group>"; };
-		D5F19552B842DBD2FC43204C /* Pods_DailyNutritionTrails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyNutritionTrails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C0756BF3D6BDD0E1C7ADCF /* Pods-DailyNutritionTrails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNutritionTrails.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyNutritionTrails/Pods-DailyNutritionTrails.release.xcconfig"; sourceTree = "<group>"; };
+		D32138EC2E0352A6C26A49A5 /* Pods-DailyNutritionTrails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNutritionTrails.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyNutritionTrails/Pods-DailyNutritionTrails.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,47 +79,47 @@
 				9C35A4B41DE4EF8000650581 /* SafariServices.framework in Frameworks */,
 				9CA121761DAC7FFD000C2FCA /* WebKit.framework in Frameworks */,
 				A3BBD77D1C05181600DD0DB0 /* MicrosoftAzureMobile.framework in Frameworks */,
-				318B643F49DCC9BB91E622E5 /* Pods_DailyNutritionTrails.framework in Frameworks */,
+				04AAF7E8C9356F30CDC27715 /* Pods_DailyNutritionTrails.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69FE973D1E631FE6001DFBFF /* Support Files */ = {
+		4FEB76311E630FBA0053F6CC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				69FE97371E631FE6001DFBFF /* Info.plist */,
-				69FE97381E631FE6001DFBFF /* SwiftSocket.modulemap */,
-				69FE97391E631FE6001DFBFF /* SwiftSocket.xcconfig */,
-				69FE973A1E631FE6001DFBFF /* SwiftSocket-dummy.m */,
-				69FE973B1E631FE6001DFBFF /* SwiftSocket-prefix.pch */,
-				69FE973C1E631FE6001DFBFF /* SwiftSocket-umbrella.h */,
+				4FEB762B1E630FBA0053F6CC /* Info.plist */,
+				4FEB762C1E630FBA0053F6CC /* SwiftSocket.modulemap */,
+				4FEB762D1E630FBA0053F6CC /* SwiftSocket.xcconfig */,
+				4FEB762E1E630FBA0053F6CC /* SwiftSocket-dummy.m */,
+				4FEB762F1E630FBA0053F6CC /* SwiftSocket-prefix.pch */,
+				4FEB76301E630FBA0053F6CC /* SwiftSocket-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftSocket";
 			sourceTree = "<group>";
 		};
-		69FE973E1E631FE6001DFBFF /* SwiftSocket */ = {
+		4FEB76321E630FBA0053F6CC /* SwiftSocket */ = {
 			isa = PBXGroup;
 			children = (
-				69FE97311E631FE6001DFBFF /* Result.swift */,
-				69FE97321E631FE6001DFBFF /* Socket.swift */,
-				69FE97331E631FE6001DFBFF /* TCPClient.swift */,
-				69FE97341E631FE6001DFBFF /* UDPClient.swift */,
-				69FE97351E631FE6001DFBFF /* ytcpsocket.c */,
-				69FE97361E631FE6001DFBFF /* yudpsocket.c */,
-				69FE973D1E631FE6001DFBFF /* Support Files */,
+				4FEB76251E630FBA0053F6CC /* Result.swift */,
+				4FEB76261E630FBA0053F6CC /* Socket.swift */,
+				4FEB76271E630FBA0053F6CC /* TCPClient.swift */,
+				4FEB76281E630FBA0053F6CC /* UDPClient.swift */,
+				4FEB76291E630FBA0053F6CC /* ytcpsocket.c */,
+				4FEB762A1E630FBA0053F6CC /* yudpsocket.c */,
+				4FEB76311E630FBA0053F6CC /* Support Files */,
 			);
 			name = SwiftSocket;
 			path = ../Pods/SwiftSocket;
 			sourceTree = "<group>";
 		};
-		95643BE5AEE1D9113BE854FC /* Pods */ = {
+		8A06314AB9AC2CDECDCB2CC7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B77F1701068DB4F5C2B1912C /* Pods-DailyNutritionTrails.debug.xcconfig */,
-				D20ED97F0630E198F371DAC5 /* Pods-DailyNutritionTrails.release.xcconfig */,
+				D32138EC2E0352A6C26A49A5 /* Pods-DailyNutritionTrails.debug.xcconfig */,
+				B0C0756BF3D6BDD0E1C7ADCF /* Pods-DailyNutritionTrails.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 				9C35A4B51DE4EF8500650581 /* Security.framework */,
 				9C35A4B31DE4EF8000650581 /* SafariServices.framework */,
 				9CA121751DAC7FFD000C2FCA /* WebKit.framework */,
-				D5F19552B842DBD2FC43204C /* Pods_DailyNutritionTrails.framework */,
+				835FE3B1F14BFF99A108EEDA /* Pods_DailyNutritionTrails.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 				A2D9CBC01943C2540017F096 /* DailyNutritionTrails */,
 				A2D9CBBF1943C2540017F096 /* Products */,
 				9CA121741DAC7FFD000C2FCA /* Frameworks */,
-				95643BE5AEE1D9113BE854FC /* Pods */,
+				8A06314AB9AC2CDECDCB2CC7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,9 +167,9 @@
 				A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */,
 				69FE971D1E62AC97001DFBFF /* mainViewController.swift */,
 				A2E767C5194594DC00869113 /* ToDoItemViewController.swift */,
-				69FE973E1E631FE6001DFBFF /* SwiftSocket */,
 				A2D9CBE51943CB520017F096 /* frameworks */,
 				A2D9CBE81943D1340017F096 /* DailyNutritionTrails-Bridging-Header.h */,
+				4FEB76321E630FBA0053F6CC /* SwiftSocket */,
 				A31A89F61BF3FDFA00C7B656 /* Launch Screen.storyboard */,
 			);
 			path = DailyNutritionTrails;
@@ -199,12 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2D9CBDD1943C2540017F096 /* Build configuration list for PBXNativeTarget "DailyNutritionTrails" */;
 			buildPhases = (
-				7F51226AFA4BCB4C3DA616A2 /* [CP] Check Pods Manifest.lock */,
+				0ABAB24E8D772B89873CF79F /* [CP] Check Pods Manifest.lock */,
 				A2D9CBBA1943C2540017F096 /* Sources */,
 				A2D9CBBB1943C2540017F096 /* Frameworks */,
 				A2D9CBBC1943C2540017F096 /* Resources */,
-				0BA523A32B4A4BD490B83DC0 /* [CP] Embed Pods Frameworks */,
-				262ECF6B44BF2C851D2A561C /* [CP] Copy Pods Resources */,
+				097283B4DF3F8A0F40EE32B6 /* [CP] Embed Pods Frameworks */,
+				3F53BD7BCDE9739F924145F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,7 +228,7 @@
 				TargetAttributes = {
 					A2D9CBBD1943C2540017F096 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = 55WCW7UH3F;
+						DevelopmentTeam = HBC4GQXATU;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -256,9 +256,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69FE97451E631FE6001DFBFF /* Info.plist in Resources */,
+				4FEB76391E630FBA0053F6CC /* Info.plist in Resources */,
 				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
-				69FE97461E631FE6001DFBFF /* SwiftSocket.xcconfig in Resources */,
+				4FEB763A1E630FBA0053F6CC /* SwiftSocket.xcconfig in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
 				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
 			);
@@ -267,7 +267,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BA523A32B4A4BD490B83DC0 /* [CP] Embed Pods Frameworks */ = {
+		097283B4DF3F8A0F40EE32B6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,22 +282,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyNutritionTrails/Pods-DailyNutritionTrails-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		262ECF6B44BF2C851D2A561C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyNutritionTrails/Pods-DailyNutritionTrails-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F51226AFA4BCB4C3DA616A2 /* [CP] Check Pods Manifest.lock */ = {
+		0ABAB24E8D772B89873CF79F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,6 +297,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		3F53BD7BCDE9739F924145F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyNutritionTrails/Pods-DailyNutritionTrails-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -319,16 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69FE973F1E631FE6001DFBFF /* Result.swift in Sources */,
-				69FE97431E631FE6001DFBFF /* ytcpsocket.c in Sources */,
+				4FEB76331E630FBA0053F6CC /* Result.swift in Sources */,
+				4FEB76371E630FBA0053F6CC /* ytcpsocket.c in Sources */,
 				66978E1A1E627D0A002D7E85 /* AnalyzeImage.swift in Sources */,
-				69FE97411E631FE6001DFBFF /* TCPClient.swift in Sources */,
-				69FE97471E631FE6001DFBFF /* SwiftSocket-dummy.m in Sources */,
-				69FE97401E631FE6001DFBFF /* Socket.swift in Sources */,
+				4FEB76351E630FBA0053F6CC /* TCPClient.swift in Sources */,
+				4FEB763B1E630FBA0053F6CC /* SwiftSocket-dummy.m in Sources */,
+				4FEB76341E630FBA0053F6CC /* Socket.swift in Sources */,
 				66978E181E627CF8002D7E85 /* JSONNSDataExtension.swift in Sources */,
-				69FE97441E631FE6001DFBFF /* yudpsocket.c in Sources */,
+				4FEB76381E630FBA0053F6CC /* yudpsocket.c in Sources */,
 				A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */,
-				69FE97421E631FE6001DFBFF /* UDPClient.swift in Sources */,
+				4FEB76361E630FBA0053F6CC /* UDPClient.swift in Sources */,
 				A2BD20971AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld in Sources */,
 				A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */,
 				A2D9CBC41943C2540017F096 /* AppDelegate.swift in Sources */,
@@ -442,12 +442,12 @@
 		};
 		A2D9CBDE1943C2540017F096 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B77F1701068DB4F5C2B1912C /* Pods-DailyNutritionTrails.debug.xcconfig */;
+			baseConfigurationReference = D32138EC2E0352A6C26A49A5 /* Pods-DailyNutritionTrails.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 55WCW7UH3F;
+				DEVELOPMENT_TEAM = HBC4GQXATU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -455,7 +455,7 @@
 				INFOPLIST_FILE = DailyNutritionTrails/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HackIllinois.DailyNutritionTrails.134;
+				PRODUCT_BUNDLE_IDENTIFIER = HackIllinois2017;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DailyNutritionTrails/DailyNutritionTrails-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -465,11 +465,11 @@
 		};
 		A2D9CBDF1943C2540017F096 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D20ED97F0630E198F371DAC5 /* Pods-DailyNutritionTrails.release.xcconfig */;
+			baseConfigurationReference = B0C0756BF3D6BDD0E1C7ADCF /* Pods-DailyNutritionTrails.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 55WCW7UH3F;
+				DEVELOPMENT_TEAM = HBC4GQXATU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -477,7 +477,7 @@
 				INFOPLIST_FILE = DailyNutritionTrails/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HackIllinois.DailyNutritionTrails.134;
+				PRODUCT_BUNDLE_IDENTIFIER = HackIllinois2017;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DailyNutritionTrails/DailyNutritionTrails-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
