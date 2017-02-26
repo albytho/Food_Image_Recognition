@@ -1,7 +1,8 @@
-from nutritionix import Nutritionix
-nix = Nutritionix(app_id="7cb9887a", api_key="a4d7fd53cc8bfde145020068f99b204d")
 from twisted.internet.protocol import Protocol, Factory
 from twisted.internet import reactor
+from nutritionix import Nutritionix
+nix = Nutritionix(app_id="", api_key="")
+import json
 
 
 class IphoneChat(Protocol):
@@ -25,16 +26,33 @@ class IphoneChat(Protocol):
                 self.name = content
                 msg = self.name + " has joined"
             
-            elif command == "msg":
-                msg = self.name + ": " + content
+            #elif command == "msg":
+            #    msg = self.name + ": " + content
             
             elif command == "nix":
-                msg = nix.search(content)
-        
-            print msg
-            
-            for c in self.factory.clients:
-                c.message(msg)
+                res = []
+                temp = nix.search(content).json()
+                for i in temp['hits']:
+                    for key, value in i['fields'].iteritems():
+                        if (key == "item_id"):
+                            index = [];
+                            for key2, value2 in nix.item(id=value).json().iteritems():
+                                if (key2 == "nf_calories_from_fat" or key2 == "nf_calcium_dv" \
+                                    or key2 == "nf_cholesterol" or key2 == "nf_iron_dv" \
+                                    or key2 == "nf_vitamin_c_dv" or key2 == "nf_sugars" \
+                                    or key2 == "nf_total_fat" or key2 == "nf_total_carbohydrate" \
+                                    or key2 == "nf_protein" or key2 == "nf_calories" \
+                                    or key2 == "nf_vitamin_a_dv" or key2 == "nf_sodium"):
+                                    #print key2, ", ", value2
+                                    index.append((key2, value2))
+                            if len(index) > 0:
+                                res.append(index)
+                    #print '\n'
+                print res
+
+            #for c in self.factory.clients
+                #c.message(msg)
+
 
 def message(self, message):
     self.transport.write(message + '\n')
