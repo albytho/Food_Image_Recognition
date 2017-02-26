@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Pods.build/Debug-iphoneos/SwiftSocket.build/unextended-module.modulemap',
+    }]
+  }]
+}

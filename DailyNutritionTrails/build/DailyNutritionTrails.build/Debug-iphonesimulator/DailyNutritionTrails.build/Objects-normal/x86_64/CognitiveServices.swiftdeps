@@ -1,0 +1,193 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CognitiveServicesApiKeys"
+- "CognitiveServices"
+provides-nominal:
+- "V20DailyNutritionTrails24CognitiveServicesApiKeys"
+- "C20DailyNutritionTrails17CognitiveServices"
+provides-member:
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", ""]
+- ["C20DailyNutritionTrails17CognitiveServices", ""]
+provides-dynamic-lookup:
+- "sharedInstance"
+- "analyzeImage"
+depends-top-level:
+- "StringLiteralType"
+- "CognitiveServices"
+- "NSObject"
+- "CognitiveServicesApiKeys"
+- "AnalyzeImage"
+depends-member:
+- ["C20DailyNutritionTrails12AnalyzeImage", "deinit"]
+- ["C20DailyNutritionTrails12AnalyzeImage", "init"]
+- ["Ps9AnyObject", "AnalyzeImage"]
+- ["Ps9AnyObject", "CognitiveServices"]
+- ["Ps9AnyObject", "analyzeImage"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "sharedInstance"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "AnalyzeImage"]
+- ["Ps7CVarArg", "CognitiveServices"]
+- ["Ps7CVarArg", "analyzeImage"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "sharedInstance"]
+- ["Ps7CVarArg", ""]
+- ["C20DailyNutritionTrails17CognitiveServices", "AnalyzeImage"]
+- ["C20DailyNutritionTrails17CognitiveServices", "CognitiveServices"]
+- ["C20DailyNutritionTrails17CognitiveServices", "analyzeImage"]
+- ["C20DailyNutritionTrails17CognitiveServices", "deinit"]
+- ["C20DailyNutritionTrails17CognitiveServices", "init"]
+- ["C20DailyNutritionTrails17CognitiveServices", "sharedInstance"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "BingSpellCheck"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "ComputerVision"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "CustomRecognition"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "Emotion"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "Face"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "Language"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "LanguageUnderstanding"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "LinguisticAnalysis"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "SpeakerRecognition"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "Speech"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "TextAnalytics"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "Video"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "WebLM"]
+- ["V20DailyNutritionTrails24CognitiveServicesApiKeys", "init"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "AnalyzeImage"]
+- ["Ps28CustomDebugStringConvertible", "CognitiveServices"]
+- ["Ps28CustomDebugStringConvertible", "analyzeImage"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "sharedInstance"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "AnalyzeImage"]
+- ["Ps23CustomStringConvertible", "CognitiveServices"]
+- ["Ps23CustomStringConvertible", "analyzeImage"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "sharedInstance"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "AnalyzeImage"]
+- ["Ps9Equatable", "CognitiveServices"]
+- ["Ps9Equatable", "analyzeImage"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "sharedInstance"]
+- ["Ps9Equatable", ""]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "AnalyzeImage"]
+- ["Ps8Hashable", "CognitiveServices"]
+- ["Ps8Hashable", "analyzeImage"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "sharedInstance"]
+- ["Ps8Hashable", ""]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnalyzeImage"]
+- ["CSo8NSObject", "CognitiveServices"]
+- ["CSo8NSObject", "analyzeImage"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "sharedInstance"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "AnalyzeImage"]
+- ["PSo16NSObjectProtocol", "CognitiveServices"]
+- ["PSo16NSObjectProtocol", "analyzeImage"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "sharedInstance"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "AnalyzeImage"]
+- ["Ps9_Hashable", "CognitiveServices"]
+- ["Ps9_Hashable", "analyzeImage"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "sharedInstance"]
+- ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "C20DailyNutritionTrails12AnalyzeImage"
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "C20DailyNutritionTrails17CognitiveServices"
+- "V20DailyNutritionTrails24CognitiveServicesApiKeys"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/DailyNutritionTrails-Bridging-Header.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MicrosoftAzureMobile.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSBlockDefinitions.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSClient.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSError.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSCoreDataStore.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSSyncContext.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSDateOffset.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSFilter.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSLoginController.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSManagedObjectObserver.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSTableOperation.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSPullSettings.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSConnectionConfiguration.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSPush.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSQuery.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSQueryResult.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSSyncContextReadResult.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSSyncTable.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSTable.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSTableOperationError.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSUser.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "9539056badf949130d8e89c04215c206"

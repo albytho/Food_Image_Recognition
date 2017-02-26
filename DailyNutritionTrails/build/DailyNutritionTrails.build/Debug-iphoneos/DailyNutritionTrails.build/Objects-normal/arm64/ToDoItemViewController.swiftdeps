@@ -9,26 +9,26 @@ provides-member:
 - ["P20DailyNutritionTrails16ToDoItemDelegate", ""]
 - ["C20DailyNutritionTrails22ToDoItemViewController", ""]
 provides-dynamic-lookup:
+- "saveItem"
+- "text"
+- "cancelPressed"
 - "textFieldShouldEndEditing"
 - "textFieldShouldReturn"
-- "text"
-- "viewDidLoad"
-- "savePressed"
-- "saveItem"
-- "cancelPressed"
 - "textFieldDidEndEditing"
+- "savePressed"
+- "viewDidLoad"
 depends-top-level:
-- "UIBarButtonItem"
 - !private "BooleanLiteralType"
-- "UITextFieldDelegate"
-- "UIBarPositioningDelegate"
-- "AssignmentPrecedence"
-- "UITextField"
-- "Bool"
-- "ToDoItemViewController"
 - "String"
 - "ToDoItemDelegate"
 - "UIViewController"
+- "UIBarButtonItem"
+- "ToDoItemViewController"
+- "AssignmentPrecedence"
+- "UITextField"
+- "UITextFieldDelegate"
+- "UIBarPositioningDelegate"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "becomeFirstResponder"]
 - ["Ps9AnyObject", "cancelPressed"]
@@ -627,4 +627,8 @@ depends-external:
 - "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSTableOperationError.h"
 - "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Modules/SwiftSocket.swiftmodule/arm64.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Headers/SwiftSocket-Swift.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Headers/SwiftSocket-umbrella.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Modules/module.modulemap"
 interface-hash: "2119820caf737f552ca239a96a9d2f3d"

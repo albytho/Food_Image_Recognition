@@ -9,13 +9,13 @@ provides-member:
 - ["V20DailyNutritionTrails24CognitiveServicesApiKeys", ""]
 - ["C20DailyNutritionTrails17CognitiveServices", ""]
 provides-dynamic-lookup:
-- "analyzeImage"
 - "sharedInstance"
+- "analyzeImage"
 depends-top-level:
-- "AnalyzeImage"
-- "CognitiveServices"
-- "StringLiteralType"
 - "CognitiveServicesApiKeys"
+- "AnalyzeImage"
+- "StringLiteralType"
+- "CognitiveServices"
 - "NSObject"
 depends-member:
 - ["C20DailyNutritionTrails12AnalyzeImage", "deinit"]
@@ -190,4 +190,8 @@ depends-external:
 - "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSTableOperationError.h"
 - "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Modules/SwiftSocket.swiftmodule/arm64.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Headers/SwiftSocket-Swift.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Headers/SwiftSocket-umbrella.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Modules/module.modulemap"
 interface-hash: "9539056badf949130d8e89c04215c206"

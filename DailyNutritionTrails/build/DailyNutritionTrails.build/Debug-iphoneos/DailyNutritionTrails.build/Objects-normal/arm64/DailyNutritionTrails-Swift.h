@@ -242,10 +242,11 @@ SWIFT_CLASS("_TtC20DailyNutritionTrails23ToDoTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
 
 SWIFT_CLASS("_TtC20DailyNutritionTrails18mainViewController")
 @interface mainViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified Label;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified totLabel;
 - (IBAction)button_click:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;

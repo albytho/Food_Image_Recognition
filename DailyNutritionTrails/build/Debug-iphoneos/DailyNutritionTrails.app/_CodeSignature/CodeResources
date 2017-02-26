@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		aJU165RSHsprMm/5+mK5bQz9VyQ=
+		2zFLbuMOkyK7/vE8buVTENU3MsY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +14,23 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-8st-Q2-1ux.nib</key>
 		<data>
-		Ag2Wj6YYzAFXiCfcyd58guCfjyk=
+		7YxZtuBb5uOmuf4wc+2KXG6ceqQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/yBC-yc-Vw6-view-JfZ-dR-1Jl.nib</key>
 		<data>
-		vRPEvAw3kXNxQWxh4+syGbgl674=
+		2H2A+TKswIc0dpWVKATo9RFrGKg=
+		</data>
+		<key>Frameworks/SwiftSocket.framework/Info.plist</key>
+		<data>
+		qB4rd9mYiVvX2+MVVsyvFhrdy2Y=
+		</data>
+		<key>Frameworks/SwiftSocket.framework/SwiftSocket</key>
+		<data>
+		BeEcSbx5YgoD7gCeqzqCmCK6u3c=
+		</data>
+		<key>Frameworks/SwiftSocket.framework/_CodeSignature/CodeResources</key>
+		<data>
+		dx/UqNYMcGV6t++NCmo3idJhqEw=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -70,7 +82,7 @@
 		</data>
 		<key>Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		RTbGmlHn7B4o35bS9etkL9cB13s=
+		Xi107cvRsMhTkHBiZsfWvkeENNE=
 		</data>
 		<key>Launch Screen.storyboardc/Info.plist</key>
 		<data>
@@ -78,7 +90,7 @@
 		</data>
 		<key>Launch Screen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		hwWOZycX+g8utp74vBVH69nz/LE=
+		eE6E6v63vmJ1CLNbT7cADnHq/Iw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -92,9 +104,13 @@
 		<data>
 		yjGFQt0qWeWTwf7RXgwgQ+LbDXM=
 		</data>
+		<key>SwiftSocket.xcconfig</key>
+		<data>
+		6hs16Ocbbw8t2PBcV+VTamc6W6w=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		MCslob6QpIJWGRQNE397ONWpmrc=
+		rIA/NGPz42qt5VUMAXT992F5bg8=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -107,11 +123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aJU165RSHsprMm/5+mK5bQz9VyQ=
+			2zFLbuMOkyK7/vE8buVTENU3MsY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3CRER5ZZGT0s6HHaSmXKTwhkeV9GKAX57exVzsmdf5M=
+			SX3j3e5bV4BXwdjNv4h/cQeiXVC4GOMSDICT7yfp1Ao=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -129,22 +145,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ag2Wj6YYzAFXiCfcyd58guCfjyk=
+			7YxZtuBb5uOmuf4wc+2KXG6ceqQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			t0T4Wi/Hc4HEkAXe0lpdA2J8l4UMqrugKWJdOOOOz3Y=
+			pp2FnvvoKO1zVijD5eso5dkK5gPeoshzjza8HqjMxik=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/yBC-yc-Vw6-view-JfZ-dR-1Jl.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vRPEvAw3kXNxQWxh4+syGbgl674=
+			2H2A+TKswIc0dpWVKATo9RFrGKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			q6OgwedAlcThLwg7WWjIAKEXXWefAjUyAFr7PzvYeN4=
+			zPaeLc2GEaLZ4CsQyCYzypq9TW6nnYiTTgx1+SIXTrc=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftSocket.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qB4rd9mYiVvX2+MVVsyvFhrdy2Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			2Ym4+n/g2AZgeEGxGtdFrmesGfcXN4CYEWJuYQ1+yT4=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftSocket.framework/SwiftSocket</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BeEcSbx5YgoD7gCeqzqCmCK6u3c=
+			</data>
+			<key>hash2</key>
+			<data>
+			dH778oWF4gkC7eaI5bLiHGCI3uVUngi5hRp50KKQudA=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftSocket.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dx/UqNYMcGV6t++NCmo3idJhqEw=
+			</data>
+			<key>hash2</key>
+			<data>
+			avC/4UdjQWGSspcNdVDE3W6DwGg3KgEfdMQ2KFlx0Lw=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -272,11 +321,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RTbGmlHn7B4o35bS9etkL9cB13s=
+			Xi107cvRsMhTkHBiZsfWvkeENNE=
 			</data>
 			<key>hash2</key>
 			<data>
-			8CxHFIBaQcdireDdo5/4KlKGg7gQIlnjaJzX7mfI8Zs=
+			Rl0Hjv+4Ga40RyGsob1HiO+tEXyElU3OJmj4n+Ml+CE=
 			</data>
 		</dict>
 		<key>Launch Screen.storyboardc/Info.plist</key>
@@ -294,11 +343,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hwWOZycX+g8utp74vBVH69nz/LE=
+			eE6E6v63vmJ1CLNbT7cADnHq/Iw=
 			</data>
 			<key>hash2</key>
 			<data>
-			M3HKm4Z4D/R0ovfGctqxKQcxZhRnDs2EIKsZcEKIqak=
+			VxAeBRmOjYo/oZ5tqvhsT7wVnHdxWXm00Gh4njHdpjg=
 			</data>
 		</dict>
 		<key>QSTodoDataModel.momd/QSTodoDataModel.mom</key>
@@ -323,15 +372,26 @@
 			gHwgEsoWl1SISdMS1Nwc+LJEUfgNvCmwiX7CPb8oGxM=
 			</data>
 		</dict>
+		<key>SwiftSocket.xcconfig</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6hs16Ocbbw8t2PBcV+VTamc6W6w=
+			</data>
+			<key>hash2</key>
+			<data>
+			73b7i7HnSkaPniHZeG2qMnFeQ4MU4x1uAu5DFFfOsaE=
+			</data>
+		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MCslob6QpIJWGRQNE397ONWpmrc=
+			rIA/NGPz42qt5VUMAXT992F5bg8=
 			</data>
 			<key>hash2</key>
 			<data>
-			deCfr3zdd/0r9nrk608lcKDT8XYdNvy6B0WEZKQq1mo=
+			DqPqj9PeylzoNl+fDA4JjvsJJebPi7Y0aoIQC9fTfXM=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

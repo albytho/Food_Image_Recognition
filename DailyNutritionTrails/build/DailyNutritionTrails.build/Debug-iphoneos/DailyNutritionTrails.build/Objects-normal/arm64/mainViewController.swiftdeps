@@ -7,33 +7,35 @@ provides-nominal:
 provides-member:
 - ["C20DailyNutritionTrails18mainViewController", ""]
 provides-dynamic-lookup:
-- "button_click"
-- "imagePicker"
-- "imagePickerController"
+- "totLabel"
 - "viewDidLoad"
+- "imagePickerController"
+- "imagePicker"
+- "button_click"
 - "didReceiveMemoryWarning"
-- "Label"
 depends-top-level:
-- "UIImagePickerControllerDelegate"
 - !private "BooleanLiteralType"
-- !private "DispatchQueue"
-- "UINavigationControllerDelegate"
-- !private "CognitiveServices"
-- "AnalyzeImageDelegate"
-- !private "StringLiteralType"
-- !private "UIImage"
-- "String"
-- "mainViewController"
-- !private "AnalyzeImageRequestObject"
-- !private "UnicodeScalarType"
-- "UITextField"
-- !private "print"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- "UIViewController"
-- "objects"
+- "UILabel"
 - "AnalyzeImage"
+- !private "UIImage"
+- !private "TCPClient"
+- !private "DispatchQueue"
+- "objects"
+- !private "StringLiteralType"
+- !private "AnalyzeImageRequestObject"
+- "CastingPrecedence"
+- !private "UnicodeScalarType"
+- "AssignmentPrecedence"
+- !private "*"
+- "AnalyzeImageDelegate"
+- "UINavigationControllerDelegate"
+- "UIViewController"
+- "UIImagePickerControllerDelegate"
+- "mainViewController"
+- !private "print"
 - "UIImagePickerController"
+- "String"
+- !private "CognitiveServices"
 depends-member:
 - ["C20DailyNutritionTrails12AnalyzeImage", "AnalyzeImageObject"]
 - !private ["C20DailyNutritionTrails12AnalyzeImage", "AnalyzeImageVisualFeatures"]
@@ -42,7 +44,8 @@ depends-member:
 - !private ["C20DailyNutritionTrails12AnalyzeImage", "delegate"]
 - !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "CognitiveServices"]
 - !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "DispatchQueue"]
-- !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "Label"]
+- !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "String"]
+- !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "TCPClient"]
 - !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "UIImagePickerController"]
 - ["P20DailyNutritionTrails20AnalyzeImageDelegate", "finnishedGeneratingObject"]
 - !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "imagePicker"]
@@ -53,6 +56,7 @@ depends-member:
 - ["P20DailyNutritionTrails20AnalyzeImageDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "present"]
 - !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "print"]
+- !private ["P20DailyNutritionTrails20AnalyzeImageDelegate", "totLabel"]
 - ["P20DailyNutritionTrails20AnalyzeImageDelegate", ""]
 - !private ["CC20DailyNutritionTrails12AnalyzeImage18AnalyzeImageObject", "deinit"]
 - !private ["CC20DailyNutritionTrails12AnalyzeImage18AnalyzeImageObject", "tags"]
@@ -62,17 +66,20 @@ depends-member:
 - !private ["OC20DailyNutritionTrails12AnalyzeImage26AnalyzeImageVisualFeatures", "Description"]
 - !private ["OC20DailyNutritionTrails12AnalyzeImage26AnalyzeImageVisualFeatures", "Faces"]
 - !private ["OC20DailyNutritionTrails12AnalyzeImage26AnalyzeImageVisualFeatures", "ImageType"]
+- !private ["OC20DailyNutritionTrails12AnalyzeImage26AnalyzeImageVisualFeatures", "Tags"]
 - ["OC20DailyNutritionTrails12AnalyzeImage26AnalyzeImageVisualFeatures", "deinit"]
 - ["Ps9AnyObject", "AnalyzeImageObject"]
 - !private ["Ps9AnyObject", "AnalyzeImageVisualFeatures"]
 - !private ["Ps9AnyObject", "CognitiveServices"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
-- ["Ps9AnyObject", "Label"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "TCPClient"]
 - !private ["Ps9AnyObject", "UIImagePickerController"]
 - !private ["Ps9AnyObject", "analyzeImage"]
 - !private ["Ps9AnyObject", "analyzeImageWithRequestObject"]
 - !private ["Ps9AnyObject", "async"]
 - ["Ps9AnyObject", "button_click"]
+- !private ["Ps9AnyObject", "connect"]
 - !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "dismiss"]
@@ -87,14 +94,17 @@ depends-member:
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "read"]
+- !private ["Ps9AnyObject", "send"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "sourceType"]
 - !private ["Ps9AnyObject", "tags"]
 - !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "totLabel"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Index"]
-- !private ["Sa", "IndexDistance"]
+- !private ["Sa", "Iterator"]
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
 - ["Sa", "deinit"]
@@ -129,11 +139,12 @@ depends-member:
 - !private ["Ps7CVarArg", "CognitiveServices"]
 - !private ["Ps7CVarArg", "DispatchQueue"]
 - !private ["Ps7CVarArg", "Index"]
-- !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
-- ["Ps7CVarArg", "Label"]
+- !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "TCPClient"]
 - !private ["Ps7CVarArg", "UIImagePickerController"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
@@ -159,9 +170,10 @@ depends-member:
 - !private ["Ps7CVarArg", "sourceType"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "text"]
+- ["Ps7CVarArg", "totLabel"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
-- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Vs9Character", "deinit"]
 - !private ["C20DailyNutritionTrails17CognitiveServices", "analyzeImage"]
 - ["C20DailyNutritionTrails17CognitiveServices", "deinit"]
 - !private ["C20DailyNutritionTrails17CognitiveServices", "sharedInstance"]
@@ -176,16 +188,15 @@ depends-member:
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Vs20CountableClosedRange", "deinit"]
-- !private ["Vs14CountableRange", "deinit"]
 - ["Ps28CustomDebugStringConvertible", "AnalyzeImageObject"]
 - !private ["Ps28CustomDebugStringConvertible", "AnalyzeImageVisualFeatures"]
 - !private ["Ps28CustomDebugStringConvertible", "CognitiveServices"]
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
-- ["Ps28CustomDebugStringConvertible", "Label"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "TCPClient"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImagePickerController"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "analyzeImage"]
@@ -210,6 +221,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "totLabel"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
@@ -217,8 +229,8 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Index"]
-- !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
+- !private ["Ps17CustomReflectable", "Iterator"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
@@ -230,11 +242,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CognitiveServices"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
 - !private ["Ps23CustomStringConvertible", "Index"]
-- !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- ["Ps23CustomStringConvertible", "Label"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "TCPClient"]
 - !private ["Ps23CustomStringConvertible", "UIImagePickerController"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -260,6 +273,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "sourceType"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "totLabel"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
@@ -281,6 +296,9 @@ depends-member:
 - !private ["CSo13DispatchQueue", "async"]
 - !private ["CSo13DispatchQueue", "deinit"]
 - !private ["CSo13DispatchQueue", "main"]
+- !private ["Sd", "deinit"]
+- !private ["VE10FoundationSS8Encoding", "deinit"]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
 - !private ["Ps9Equatable", "Adult"]
 - ["Ps9Equatable", "AnalyzeImageObject"]
 - !private ["Ps9Equatable", "AnalyzeImageVisualFeatures"]
@@ -292,8 +310,10 @@ depends-member:
 - !private ["Ps9Equatable", "Faces"]
 - !private ["Ps9Equatable", "ImageType"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
-- ["Ps9Equatable", "Label"]
 - !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "TCPClient"]
+- !private ["Ps9Equatable", "Tags"]
 - !private ["Ps9Equatable", "UIImagePickerController"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "analyzeImage"]
@@ -318,10 +338,13 @@ depends-member:
 - !private ["Ps9Equatable", "sharedInstance"]
 - !private ["Ps9Equatable", "sourceType"]
 - !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "totLabel"]
+- !private ["Ps9Equatable", "utf8"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps5Error", "deinit"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
-- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
@@ -335,6 +358,7 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "Adult"]
 - ["Ps8Hashable", "AnalyzeImageObject"]
 - !private ["Ps8Hashable", "AnalyzeImageVisualFeatures"]
@@ -346,8 +370,10 @@ depends-member:
 - !private ["Ps8Hashable", "Faces"]
 - !private ["Ps8Hashable", "ImageType"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
-- ["Ps8Hashable", "Label"]
 - !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "TCPClient"]
+- !private ["Ps8Hashable", "Tags"]
 - !private ["Ps8Hashable", "UIImagePickerController"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "analyzeImage"]
@@ -372,6 +398,8 @@ depends-member:
 - !private ["Ps8Hashable", "sharedInstance"]
 - !private ["Ps8Hashable", "sourceType"]
 - !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "totLabel"]
+- !private ["Ps8Hashable", "utf8"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
@@ -394,6 +422,10 @@ depends-member:
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
 - !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
 - !private ["Ps7Integer", "IntegerLiteralType"]
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "_DisabledRangeIndex"]
@@ -407,19 +439,20 @@ depends-member:
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "Index"]
-- !private ["Ps17MutableCollection", "IndexDistance"]
+- !private ["Ps17MutableCollection", "Iterator"]
 - !private ["Ps17MutableCollection", "SubSequence"]
 - !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "subscript"]
 - !private ["Ps16MutableIndexable", "Index"]
-- !private ["Ps16MutableIndexable", "IndexDistance"]
+- !private ["Ps16MutableIndexable", "Iterator"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
 - !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CognitiveServices"]
 - !private ["PSo8NSCoding", "DispatchQueue"]
-- ["PSo8NSCoding", "Label"]
+- !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "TCPClient"]
 - !private ["PSo8NSCoding", "UIImagePickerController"]
 - ["PSo8NSCoding", "button_click"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -437,12 +470,14 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "sourceType"]
 - !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "totLabel"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CognitiveServices"]
 - !private ["PSo26NSExtensionRequestHandling", "DispatchQueue"]
-- ["PSo26NSExtensionRequestHandling", "Label"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "TCPClient"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "button_click"]
 - !private ["PSo26NSExtensionRequestHandling", "delegate"]
@@ -459,6 +494,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "present"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "sourceType"]
+- ["PSo26NSExtensionRequestHandling", "totLabel"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -468,11 +504,11 @@ depends-member:
 - !private ["CSo8NSObject", "AnalyzeImageVisualFeatures"]
 - !private ["CSo8NSObject", "CognitiveServices"]
 - !private ["CSo8NSObject", "DispatchQueue"]
-- ["CSo8NSObject", "Label"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "TCPClient"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImagePickerController"]
-- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "analyzeImage"]
 - !private ["CSo8NSObject", "analyzeImageWithRequestObject"]
 - !private ["CSo8NSObject", "async"]
@@ -494,12 +530,14 @@ depends-member:
 - !private ["CSo8NSObject", "sharedInstance"]
 - !private ["CSo8NSObject", "sourceType"]
 - !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "totLabel"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "AnalyzeImageObject"]
 - !private ["PSo16NSObjectProtocol", "AnalyzeImageVisualFeatures"]
 - !private ["PSo16NSObjectProtocol", "CognitiveServices"]
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
-- ["PSo16NSObjectProtocol", "Label"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "TCPClient"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerController"]
 - !private ["PSo16NSObjectProtocol", "analyzeImage"]
 - !private ["PSo16NSObjectProtocol", "analyzeImageWithRequestObject"]
@@ -522,6 +560,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sharedInstance"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "totLabel"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -549,14 +588,13 @@ depends-member:
 - !private ["Vs17RandomAccessSlice", "Iterator"]
 - !private ["Vs17RandomAccessSlice", "SubSequence"]
 - !private ["Vs17RandomAccessSlice", "_Element"]
-- !private ["Vs5Range", "deinit"]
 - !private ["Ps26RangeReplaceableCollection", "Index"]
-- !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
 - !private ["Ps26RangeReplaceableCollection", "SubSequence"]
 - !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps25RangeReplaceableIndexable", "Index"]
-- !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
 - !private ["Ps25RangeReplaceableIndexable", "SubSequence"]
 - !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
@@ -566,7 +604,12 @@ depends-member:
 - !private ["Ps16RawRepresentable", "Description"]
 - !private ["Ps16RawRepresentable", "Faces"]
 - !private ["Ps16RawRepresentable", "ImageType"]
+- !private ["Ps16RawRepresentable", "Tags"]
 - !private ["Ps16RawRepresentable", "camera"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- !private ["O20DailyNutritionTrails6Result", "deinit"]
+- !private ["O20DailyNutritionTrails6Result", "failure"]
+- !private ["O20DailyNutritionTrails6Result", "success"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "IndexDistance"]
@@ -585,18 +628,28 @@ depends-member:
 - !private ["Vs5Slice", "Iterator"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["C20DailyNutritionTrails6Socket", "connect"]
+- !private ["C20DailyNutritionTrails6Socket", "init"]
+- !private ["C20DailyNutritionTrails6Socket", "read"]
+- !private ["C20DailyNutritionTrails6Socket", "send"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
+- !private ["C20DailyNutritionTrails9TCPClient", "connect"]
+- !private ["C20DailyNutritionTrails9TCPClient", "deinit"]
+- !private ["C20DailyNutritionTrails9TCPClient", "init"]
+- !private ["C20DailyNutritionTrails9TCPClient", "read"]
+- !private ["C20DailyNutritionTrails9TCPClient", "send"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "CognitiveServices"]
 - !private ["PSo21UIAppearanceContainer", "DispatchQueue"]
-- ["PSo21UIAppearanceContainer", "Label"]
+- !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "TCPClient"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerController"]
 - ["PSo21UIAppearanceContainer", "button_click"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
@@ -614,11 +667,13 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "totLabel"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CognitiveServices"]
 - !private ["PSo18UIContentContainer", "DispatchQueue"]
-- ["PSo18UIContentContainer", "Label"]
+- !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "TCPClient"]
 - !private ["PSo18UIContentContainer", "UIImagePickerController"]
 - ["PSo18UIContentContainer", "button_click"]
 - !private ["PSo18UIContentContainer", "delegate"]
@@ -635,15 +690,16 @@ depends-member:
 - !private ["PSo18UIContentContainer", "present"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "sourceType"]
+- ["PSo18UIContentContainer", "totLabel"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
-- !private ["CSo9UIControl", "text"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "CognitiveServices"]
 - !private ["PSo18UIFocusEnvironment", "DispatchQueue"]
-- ["PSo18UIFocusEnvironment", "Label"]
+- !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "TCPClient"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerController"]
 - ["PSo18UIFocusEnvironment", "button_click"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
@@ -661,6 +717,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "totLabel"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "text"]
@@ -672,7 +729,8 @@ depends-member:
 - !private ["CSo23UIImagePickerController", "sourceType"]
 - !private ["PSo31UIImagePickerControllerDelegate", "CognitiveServices"]
 - !private ["PSo31UIImagePickerControllerDelegate", "DispatchQueue"]
-- !private ["PSo31UIImagePickerControllerDelegate", "Label"]
+- !private ["PSo31UIImagePickerControllerDelegate", "String"]
+- !private ["PSo31UIImagePickerControllerDelegate", "TCPClient"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "finnishedGeneratingObject"]
 - !private ["PSo31UIImagePickerControllerDelegate", "imagePicker"]
@@ -683,17 +741,19 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo31UIImagePickerControllerDelegate", "present"]
 - !private ["PSo31UIImagePickerControllerDelegate", "print"]
+- !private ["PSo31UIImagePickerControllerDelegate", "totLabel"]
 - ["PSo31UIImagePickerControllerDelegate", ""]
 - !private ["OSC33UIImagePickerControllerSourceType", "camera"]
 - ["OSC33UIImagePickerControllerSourceType", "deinit"]
-- !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "text"]
 - !private ["CSo22UINavigationController", "delegate"]
 - !private ["CSo22UINavigationController", "dismiss"]
 - !private ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "sourceType"]
 - !private ["PSo30UINavigationControllerDelegate", "CognitiveServices"]
 - !private ["PSo30UINavigationControllerDelegate", "DispatchQueue"]
-- !private ["PSo30UINavigationControllerDelegate", "Label"]
+- !private ["PSo30UINavigationControllerDelegate", "String"]
+- !private ["PSo30UINavigationControllerDelegate", "TCPClient"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
 - ["PSo30UINavigationControllerDelegate", "finnishedGeneratingObject"]
 - !private ["PSo30UINavigationControllerDelegate", "imagePicker"]
@@ -704,16 +764,17 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo30UINavigationControllerDelegate", "present"]
 - !private ["PSo30UINavigationControllerDelegate", "print"]
+- !private ["PSo30UINavigationControllerDelegate", "totLabel"]
 - ["PSo30UINavigationControllerDelegate", ""]
 - ["CSo11UIResponder", "AnalyzeImage"]
 - !private ["CSo11UIResponder", "AnalyzeImageRequestObject"]
 - !private ["CSo11UIResponder", "CognitiveServices"]
 - !private ["CSo11UIResponder", "DispatchQueue"]
-- ["CSo11UIResponder", "Label"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "TCPClient"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImagePickerController"]
-- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "button_click"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -730,10 +791,12 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "sourceType"]
 - !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "totLabel"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "CognitiveServices"]
 - !private ["PSo30UIResponderStandardEditActions", "DispatchQueue"]
-- ["PSo30UIResponderStandardEditActions", "Label"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
+- !private ["PSo30UIResponderStandardEditActions", "TCPClient"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImagePickerController"]
 - ["PSo30UIResponderStandardEditActions", "button_click"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
@@ -751,11 +814,13 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "sourceType"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", "totLabel"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "CognitiveServices"]
 - !private ["PSo16UIStateRestoring", "DispatchQueue"]
-- ["PSo16UIStateRestoring", "Label"]
+- !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "TCPClient"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerController"]
 - ["PSo16UIStateRestoring", "button_click"]
 - !private ["PSo16UIStateRestoring", "delegate"]
@@ -772,14 +837,13 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "present"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "sourceType"]
+- ["PSo16UIStateRestoring", "totLabel"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["CSo11UITextField", "text"]
-- !private ["PSo11UITextInput", "text"]
-- !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "CognitiveServices"]
 - !private ["PSo18UITraitEnvironment", "DispatchQueue"]
-- ["PSo18UITraitEnvironment", "Label"]
+- !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "TCPClient"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerController"]
 - ["PSo18UITraitEnvironment", "button_click"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
@@ -797,6 +861,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "sourceType"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "totLabel"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
@@ -804,11 +869,11 @@ depends-member:
 - !private ["CSo16UIViewController", "AnalyzeImageRequestObject"]
 - !private ["CSo16UIViewController", "CognitiveServices"]
 - !private ["CSo16UIViewController", "DispatchQueue"]
-- ["CSo16UIViewController", "Label"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "TCPClient"]
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImagePickerController"]
-- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "button_click"]
 - ["CSo16UIViewController", "deinit"]
 - !private ["CSo16UIViewController", "delegate"]
@@ -825,16 +890,23 @@ depends-member:
 - !private ["CSo16UIViewController", "present"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "sourceType"]
+- ["CSo16UIViewController", "totLabel"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
 - !private ["Ps14_ArrayProtocol", "Index"]
-- !private ["Ps14_ArrayProtocol", "IndexDistance"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "SubSequence"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
-- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
@@ -857,8 +929,10 @@ depends-member:
 - !private ["Ps9_Hashable", "Faces"]
 - !private ["Ps9_Hashable", "ImageType"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
-- ["Ps9_Hashable", "Label"]
 - !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "String"]
+- !private ["Ps9_Hashable", "TCPClient"]
+- !private ["Ps9_Hashable", "Tags"]
 - !private ["Ps9_Hashable", "UIImagePickerController"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "analyzeImage"]
@@ -883,6 +957,8 @@ depends-member:
 - !private ["Ps9_Hashable", "sharedInstance"]
 - !private ["Ps9_Hashable", "sourceType"]
 - !private ["Ps9_Hashable", "text"]
+- ["Ps9_Hashable", "totLabel"]
+- !private ["Ps9_Hashable", "utf8"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
@@ -895,8 +971,8 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
@@ -913,11 +989,11 @@ depends-member:
 - !private ["C20DailyNutritionTrails18mainViewController", "AnalyzeImageRequestObject"]
 - !private ["C20DailyNutritionTrails18mainViewController", "CognitiveServices"]
 - !private ["C20DailyNutritionTrails18mainViewController", "DispatchQueue"]
-- ["C20DailyNutritionTrails18mainViewController", "Label"]
 - ["C20DailyNutritionTrails18mainViewController", "String"]
+- !private ["C20DailyNutritionTrails18mainViewController", "TCPClient"]
 - !private ["C20DailyNutritionTrails18mainViewController", "UIImage"]
 - ["C20DailyNutritionTrails18mainViewController", "UIImagePickerController"]
-- ["C20DailyNutritionTrails18mainViewController", "UITextField"]
+- ["C20DailyNutritionTrails18mainViewController", "UILabel"]
 - ["C20DailyNutritionTrails18mainViewController", "button_click"]
 - ["C20DailyNutritionTrails18mainViewController", "deinit"]
 - ["C20DailyNutritionTrails18mainViewController", "didReceiveMemoryWarning"]
@@ -931,6 +1007,7 @@ depends-member:
 - ["C20DailyNutritionTrails18mainViewController", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["C20DailyNutritionTrails18mainViewController", "present"]
 - !private ["C20DailyNutritionTrails18mainViewController", "print"]
+- ["C20DailyNutritionTrails18mainViewController", "totLabel"]
 - ["C20DailyNutritionTrails18mainViewController", "viewDidLoad"]
 depends-nominal:
 - "C20DailyNutritionTrails12AnalyzeImage"
@@ -946,12 +1023,10 @@ depends-nominal:
 - "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
-- !private "Vs11ClosedRange"
+- !private "Vs9Character"
 - "C20DailyNutritionTrails17CognitiveServices"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
-- !private "Vs20CountableClosedRange"
-- !private "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
@@ -961,7 +1036,10 @@ depends-nominal:
 - "Vs10Dictionary"
 - !private "CSo14DispatchObject"
 - !private "CSo13DispatchQueue"
+- !private "Sd"
+- !private "VE10FoundationSS8Encoding"
 - "Ps9Equatable"
+- !private "Ps5Error"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
@@ -969,12 +1047,17 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
 - !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
@@ -996,16 +1079,18 @@ depends-nominal:
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
 - !private "Vs17RandomAccessSlice"
-- !private "Vs5Range"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
+- !private "O20DailyNutritionTrails6Result"
 - !private "Ps8Sequence"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Vs5Slice"
+- !private "C20DailyNutritionTrails6Socket"
 - !private "Ps10Strideable"
 - "SS"
+- !private "C20DailyNutritionTrails9TCPClient"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
@@ -1013,7 +1098,6 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
-- !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -1022,18 +1106,21 @@ depends-nominal:
 - "CSo23UIImagePickerController"
 - "PSo31UIImagePickerControllerDelegate"
 - "OSC33UIImagePickerControllerSourceType"
-- !private "PSo10UIKeyInput"
+- !private "CSo7UILabel"
 - !private "CSo22UINavigationController"
 - "PSo30UINavigationControllerDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
-- !private "CSo11UITextField"
-- !private "PSo11UITextInput"
-- !private "PSo17UITextInputTraits"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
@@ -1086,4 +1173,8 @@ depends-external:
 - "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSTableOperationError.h"
 - "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/MicrosoftAzureMobile.framework/Headers/MSUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "a9007c0c0cf8e6da90e99665b26a5ac6"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Modules/SwiftSocket.swiftmodule/arm64.swiftmodule"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Headers/SwiftSocket-Swift.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Headers/SwiftSocket-umbrella.h"
+- "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/build/Debug-iphoneos/SwiftSocket/SwiftSocket.framework/Modules/module.modulemap"
+interface-hash: "16eb92607f49bd0bee870d85c90b2175"

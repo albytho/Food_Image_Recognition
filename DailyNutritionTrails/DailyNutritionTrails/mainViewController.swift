@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SwiftSocket
 
 var objects: [String] = []
 
 class mainViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,AnalyzeImageDelegate{
     
-    @IBOutlet var Label: UITextField!
+
+    @IBOutlet weak var totLabel: UILabel!
     
     @IBAction func button_click(_ sender: Any) {
         imagePicker =  UIImagePickerController()
@@ -28,7 +30,7 @@ class mainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Label.text = " "
+        totLabel.text = " "
         // Do any additional setup after loading the view.
     }
 
@@ -47,15 +49,32 @@ class mainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         let analyzeImage = CognitiveServices.sharedInstance.analyzeImage
         analyzeImage.delegate = self
         
-        let visualFeatures: [AnalyzeImage.AnalyzeImageVisualFeatures] = [.Categories, .Description, .Faces, .ImageType, .Color, .Adult]
+        let visualFeatures: [AnalyzeImage.AnalyzeImageVisualFeatures] = [.Categories, .Tags, .Description, .Faces, .ImageType, .Color, .Adult]
         let requestObject: AnalyzeImageRequestObject = (image, visualFeatures)
         
         try! analyzeImage.analyzeImageWithRequestObject(requestObject, completion: { (response) in
             DispatchQueue.main.async(execute: {
-                print(response!.tags![0])
-                //self.Label.text = "\response!.tags![0]"
+                let tol = String(response!.tags![0])
+                print(tol!)
+                self.totLabel.text = "\(tol!)"
                 //objects.append(response!.tags![0])
-                
+                let client = TCPClient(address: "10.194.202.103", port: 81)
+                switch client.connect(timeout: 1) {
+                case .success:
+                    switch client.send(string: "nix:pizza" ) {
+                    case .success:
+                        guard let data = client.read(1024*10) else { return }
+                        
+                        if let response = String(bytes: data, encoding: .utf8) {
+                            print(response)
+                        }
+                    case .failure(let error):
+                        print(error)
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+
             })
         })
         

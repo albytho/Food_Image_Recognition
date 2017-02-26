@@ -1,0 +1,15 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "2a21ec27cdddfdd9f8b585aa368deeb1"
+build_time: [541434903, 359505000]
+inputs:
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/AnalyzeImage.swift": [541393074, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/JSONNSDataExtension.swift": [541393074, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/ToDoItemViewController.swift": [541393074, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/ToDoTableViewController.swift": [541404465, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/AppDelegate.swift": [541393074, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/SwiftSocket/Sources/Socket.swift": [9223372036854775807, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/SwiftSocket/Sources/Result.swift": [9223372036854775807, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/SwiftSocket/Sources/TCPClient.swift": [9223372036854775807, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/CognitiveServices.swift": [541393074, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/mainViewController.swift": [541432216, 0]
+  "/Users/Alby/Downloads/Food_Image_Recognition-master/DailyNutritionTrails/DailyNutritionTrails/SwiftSocket/Sources/UDPClient.swift": [9223372036854775807, 0]
