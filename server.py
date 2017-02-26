@@ -27,9 +27,9 @@ class IphoneChat(Protocol):
                 self.name = content
                 msg = self.name + " has joined"
             
-            elif command == "msg":
-                msg = self.name + ": " + content
-                print msg
+            #elif command == "msg":
+            #    msg = self.name + ": " + content
+            #    print msg
             
             elif command == "nix":
                 res = []
@@ -45,10 +45,10 @@ class IphoneChat(Protocol):
                                     or key2 == "nf_total_fat" or key2 == "nf_total_carbohydrate" \
                                     or key2 == "nf_protein" or key2 == "nf_calories" \
                                     or key2 == "nf_vitamin_a_dv" or key2 == "nf_sodium"):
-                                    if (key2 == "nf_calories" and flag == 0):
-                                        msg = "val:" + str(value2)
-                                        print value2
-                                        flag = 1
+                                    if ((key2 == "nf_calories" or key2 == "nf_total_carbohydrate" or key2 == "nf_vitamin_c_dv" or key2 == "nf_vitamin_a_dv") and flag < 4):
+                                        msg += str(value2) + ","
+                                        print key2, ", ", value2
+                                        flag += 1
                                     #print key2, ", ", value2
                                     #index.append((key2, value2))
                             #if len(index) > 0:
