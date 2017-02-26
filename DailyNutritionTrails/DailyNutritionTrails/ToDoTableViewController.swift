@@ -126,7 +126,7 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
         
         try! analyzeImage.analyzeImageWithRequestObject(requestObject, completion: { (response) in
             DispatchQueue.main.async(execute: {
-                print(response!.descriptionText!)
+                print(response!.tags![0])
             })
         })
         
